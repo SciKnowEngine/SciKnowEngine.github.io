@@ -9,6 +9,7 @@ ehthumbs.db
 Thumbs.db
 .history
 npm-debug.log
-
+_site
+.idea
 # backup file #
 *~
