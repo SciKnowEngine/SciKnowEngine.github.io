@@ -1,0 +1,11 @@
+{% for post in site.posts %}
+  {% assign currentdate = post.date | date: "%B %Y" %}
+  {% if currentdate != date %}
+    {% unless forloop.first %}</ol>{% endunless %}
+    <h3 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h3>
+    <ol>
+    {% assign date = currentdate %}
+  {% endif %}
+    <li><a href="/{{ post.url | remove_first:'/'}}">{{ post.title }}</a></li>
+  {% if forloop.last %}</ol>{% endif %}
+{% endfor %}

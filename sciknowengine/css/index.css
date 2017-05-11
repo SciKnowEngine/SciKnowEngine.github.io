@@ -49,6 +49,9 @@ header .scroll-btn-container .scroll-btn:hover {
   border-color: white;
   color: white;
 }
+header .description {
+  color: white;
+}
 
 section {
   padding-top: 60px;

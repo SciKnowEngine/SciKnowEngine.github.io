@@ -1,3 +1,6 @@
+---
+title: SciKnowEngine Home
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,9 +33,11 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a class="scroll" href="#home">Home</a></li>
 					<li><a class="scroll" href="#about">About</a></li>
+					<!--<li><a class="scroll" href="#blog">Blog Posts</a></li>-->
+					<!--<li><a class="scroll" href="#tweets">Twitter</a></li>-->
 					<li><a class="scroll" href="#publications">Publications</a></li>
 					<li><a class="scroll" href="#projects">Projects</a></li>
-					<li><a class="scroll" href="#people">People</a></li>
+					<!--<li><a class="scroll" href="#people">People</a></li>-->
 					<li><a class="scroll" href="#downloads">Downloads</a></li>
 				</ul>        
 			</div><!-- collapse navbar-collapse -->
@@ -41,7 +46,7 @@
 
 	<header id="home">
 		<div class="container">
-			<h1>Scientific Knowledge Engineering Group</h1>
+			<h1>Scientific Knowledge Engineering @ ISI</h1>
 			<div class="affiliation">
 				<div><a href="http://www.isi.edu"><img src="../img/logo/isi-logo.png" width="250"></a></div>
 				<div><a href="http://www.usc.edu"><img src="../img/logo/usc-shield-name-white.png"></a></div>
@@ -91,7 +96,11 @@
 				</a>
 			</div><!-- carousel -->
 
-			<p>ISI's Scientific Knowledge Engineering ('SciKnowEngine') group combines ontology/knowledge engineering, artificial intelligence, the semantic web, machine reading and science informatics techniques to support the development of next-generation scientific informatics infrastructure. We leverage general research techniques across information-intensive disciplines, focussing primarily on specialized subfields of biomedical informatics, but also generalizing to other fields.</p>
+			<p>ISI's Scientific Knowledge Engineering ('SciKnowEngine') group combines ontology/knowledge engineering,
+				artificial intelligence, the semantic web, machine reading and science informatics techniques to support
+				the development of next-generation scientific informatics infrastructure. We leverage general research
+				techniques across information-intensive disciplines, focussing primarily on specialized subfields of
+				biomedical informatics, but also generalizing to other fields.</p>
 
 			<p>The SciKnowEngine group currently is pursuing automatic machine reading systems for scientific evidence, unsupervised modeling of complex research literature, modeling experimental design to better understand the structure of scientific data, automated scientifically-aware web-agents, application of information integration and semantic web to biomedical databases and pedadogical systems to support improved technical knowledge acquisition. Our work focuses on solving real-world problems to bridge research and relevant applications by building and applying tools for working scientists. </p>
 
@@ -107,15 +116,22 @@
 		</div><!-- content -->
 	</section>
 
-	<!--<section id="tweets" class="container">
+<!--<section id="tweets" class="container">
 		<h2>TWEETS</h2>
 		<div class="content">
-			<a class="twitter-timeline" href="https://twitter.com/SciKnowEngine" data-widget-id="588823512216838144" data-chrome="nofooter">Tweets by @SciKnowEngine</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<a class="twitter-timeline" data-height="1000" href="https://twitter.com/SciKnowEngine">Tweets by @SciKnowEngine</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
 	</section>-->
 
-	<section id="pub" class="container">
+	<section id="blog" class="container">
+		<h2>BLOG POSTS</h2>
+		<div class="content">
+			{% include toc.html %}
+		</div>
+	</section>
+
+
+	<section id="publications" class="container">
 		<h2>PUBLICATIONS</h2>
 		<div class="content">
 			<div id="word-cloud-container" data-bib="doc/sciknowengine.bib" data-min-word-count="2" data-max-word-count="30" data-min-font-size="5" data-max-font-size="40"></div>
@@ -143,20 +159,20 @@
 		</div>
 	</section>	
 
-	<section id="people" class="container">
+<!--	<section id="people" class="container">
 		<h2>PEOPLE</h2>
 		<ul class="content list-unstyled">
-			<h3>Researcher Leads</h3>
+			<h3>Researchers and Collaborators</h3>
 
 			<li>
 				<a style="background-image:url('../img/people/Gully-Burns.jpg')" href="http://www.isi.edu/people/burns/homepage"></a>
 				<div class="description">
 					<div class="name">Gully Burns</div>
-					<div class="title">Project Leader</div>
+					<div class="title">Research Lead</div>
 				</div>
 			</li>
 
-			<!--<li>
+			<li>
 				<a style="background-image:url('../img/people/Craig-Knoblock.jpg')" href="../knoblock"></a>
 				<div class="description">
 					<div class="name">Craig Knoblock</div>
@@ -171,13 +187,6 @@
 				</div>
 			</li>
 			<li>
-				<a style="background-image:url('../img/people/Kristina-Lerman.jpg')" href="http://www.isi.edu/integration/people/lerman"></a>
-				<div class="description">
-					<div class="name">Kristina Lerman</div>
-					<div class="title">Research Team Leader</div>
-				</div>
-			</li>
-			<li>
 				<a style="background-image:url('../img/people/Jose-Luis-Ambite.jpg')" href="http://www.isi.edu/~ambite"></a>
 				<div class="description">
 					<div class="name">Jose Luis Ambite</div>
@@ -185,13 +194,6 @@
 				</div>
 			</li>
 			
-				<li>
-				<a style="background-image:url('../img/people/Yao-Yi-Chiang.jpg')" href="http://www.yoyoi.info"></a>
-				<div class="description">
-					<div class="name">Yao-Yi Chiang</div>
-					<div class="title">Assistant Professor</div>
-				</div>
-			</li>
 			<h3>Researchers</h3>
 			<li>
 				<a style="background-image:url('../img/people/Anoop-Kumar.jpg')" href="../anoopkum"></a>
@@ -969,10 +971,10 @@
 					<div class="name">Yuting Liu</div>
 					<div class="title">Teradata</div>
 				</div>
-			</li>-->
+			</li>
 			
 		</ul>
-	</section>
+	</section>-->
 
 	<section id="downloads" class="container">
 		<h2>DOWNLOADS</h2>
@@ -1149,7 +1151,7 @@
 	</section>
 
 	<footer>
-		<div class="container">&copy; 2016 The University of Southern California</div>
+		<div class="container">&copy; 2017 The University of Southern California</div>
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
