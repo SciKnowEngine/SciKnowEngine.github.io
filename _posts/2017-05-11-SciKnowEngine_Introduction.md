@@ -7,7 +7,7 @@ By *Gully A. Burns*
 
 At a high level, our work is centered on the following construct: 
 
-![The Cycle of Scientific Investigation](../img/carousel/ske/cycle_of_scientific_investigation.png)
+<img width='700' src="/img/ske/cosi7.png">
 
 Scientific knowledge moves forward when a well-defined paradigm permits researchers to analyze their knowledge, 
 formulate questions that can be tested experimentally so that data can be interpreted to generated knowledge. Exactly 

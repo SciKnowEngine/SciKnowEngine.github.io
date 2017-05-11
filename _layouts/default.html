@@ -28,38 +28,23 @@
 		</div><!-- navbar-header -->
 		<div class="collapse navbar-collapse" id="nav-links">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a class="scroll" href="#home">Title</a></li>
-				<li><a class="scroll" href="#post">Post</a></li>
 			</ul>
 		</div><!-- collapse navbar-collapse -->
 	</div><!-- container -->
 </nav>
 
-<header id="home">
-	<div class="container">
-		<h1>{{ page.title }}</h1>
-		<div class="affiliation">
-			<div><a href="http://www.isi.edu"><img src="/img/logo/isi-logo.png" width="250"></a></div>
-			<div><a href="http://www.usc.edu"><img src="/img/logo/usc-shield-name-white.png"></a></div>
-			<div>
-				<p class="description">
-					{{page.description}}
-				</p>
-			</div>
-		</div>
-	</div><!-- container -->
-	<div class="scroll-btn-container hidden-xs">
-		<a class="scroll-btn scroll" href="#post"><i class="fa fa-angle-down"></i></a>
-	</div>
-</header>
-
-<section id="post" class="container">
-	<h2>ABOUT</h2>
+<section id="post">
 	<div class="content">
+		<h1>{{ page.title }}</h1>
+		<p class="description" style="font-style: italic">
+			{{page.description}}
+		</p>
+		<p>
 		{{ content }}
+		</p>
 	</div><!-- content -->
+	<!-- container -->
 </section>
-
 
 <footer>
 	<div class="container">&copy; 2017 The University of Southern California</div>
