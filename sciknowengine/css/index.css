@@ -139,6 +139,70 @@ section .content {
   color: white;
 }
 
+
+/* COPIED TO FORMAT VIDEOS SECTION IN THE SAME WAY AS PROJECTS */
+
+#videos .content {
+  max-width: 900px;
+  text-align: center;
+}
+#videos .content a.project {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#videos .content a.project::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: background 0.3s linear;
+  transition: background 0.3s linear;
+}
+#videos .content a.project .img-container {
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#videos .content a.project .img-container.contain {
+  background-size: contain;
+}
+#videos .content a.project .description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  background: #ECF0F1;
+  color: #34495e;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+#videos .content a.project .description .name {
+  margin: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+#videos .content a.project:hover::before {
+  background: rgba(0, 0, 0, 0.5);
+}
+#videos .content a.project:hover .description {
+  background: #555;
+  color: white;
+}
+ /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
 #people ul.content {
   max-width: 800px;
 }
