@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92dd31f6-8684-4e94-ac2c-f66a2437d39a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts_drafts/2017-05-09-DontBeATroll.md" afterPath="$PROJECT_DIR$/_posts_drafts/2017-05-09-DontBeATroll.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sciknowengine/index.html" afterPath="$PROJECT_DIR$/sciknowengine/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,8 +23,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sciknowengine/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="205" column="87" lean-forward="false" selection-start-line="205" selection-start-column="87" selection-end-line="205" selection-end-column="87" />
+            <state relative-caret-position="636">
+              <caret line="145" column="84" lean-forward="true" selection-start-line="145" selection-start-column="84" selection-end-line="145" selection-end-column="84" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#a#0;n#a#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -368,7 +366,7 @@
       <workItem from="1494616110754" duration="509000" />
       <workItem from="1494953445412" duration="8839000" />
       <workItem from="1494971039562" duration="556000" />
-      <workItem from="1495133483969" duration="15034000" />
+      <workItem from="1495133483969" duration="15422000" />
     </task>
     <task id="LOCAL-00001" summary="Added basic SciKnowEngine site">
       <created>1492802873547</created>
@@ -402,7 +400,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64393000" />
+    <option name="totallyTimeSpent" value="64781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="35" y="23" width="1885" height="1057" extended-state="0" />
@@ -721,8 +719,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sciknowengine/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="205" column="87" lean-forward="false" selection-start-line="205" selection-start-column="87" selection-end-line="205" selection-end-column="87" />
+        <state relative-caret-position="636">
+          <caret line="145" column="84" lean-forward="true" selection-start-line="145" selection-start-column="84" selection-end-line="145" selection-end-column="84" />
           <folding>
             <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#a#0;n#a#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
