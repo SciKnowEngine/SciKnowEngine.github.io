@@ -1,6 +1,6 @@
 ---
 title: Don't Be a Troll, Be a Wizard! (draft)
-description: A vision for how well-defined access to scientific knowledge could transform the pursuit of policy.
+description: A vision for how well-defined access to scientific knowledge could transform the pursuit of policy. This document is a draft and will be revised extensively until its comppletion. 
 layout: default
 ---
 By *Gully A. Burns*
@@ -155,13 +155,24 @@ subject and influence public opinion.
     with the scientific evidence, rather than only using the scientific evidence to bolster 
     a preconceived underlying political position. 
 4. There are other related efforts attempting to render aspects of public life more fact-based and 
-    data-driven, politics, journalism, etc. Working to provide these projects with effective 
-
-['Solutions Journalism'](http://solutionsjournalism.org/) provides a powerful appraoch to communicating 
+    data-driven. This provides a working community of data-providers, developers and end-users as 
+    well as possible frameworks for increasing the scope and impact of technology in multiple areas. 
+    * [The FORCE11 group ('Future Of Research Communication and E-Scholarship)](https://www.force11.org) 
+     is a wide-ranging academic / industry community with a broad mandate to bring about the 
+     transformation of scientific communication. 
+    * ['Solutions Journalism'](http://solutionsjournalism.org/) provides a powerful appraoch to communicating 
 uncomfortable issues to the public. By surveying how problems are being solved and then framing discussions 
 of difficult subjects, propopents of this approach have shown that members of the public are more engaged 
 and receptive to reporting when framed in this way. Such an approach could work well for how we communicate 
 the application of scientific methods to policy. 
+   * Steve Ballmer, the ex-CEO of Microsoft, has financed and driven ['USA Facts'](https://usafacts.org/), 
+   a website that examines the financial 'score card' of the United States as if it were a business. 
+   A recent Freakonomics podcast (['Hoopers! Hoopers! Hoopers!'](http://freakonomics.com/podcast/hoopers-hoopers-hoopers/))
+   showcased this interesting project and dealt briefly with the subject of outcomes and how 
+   one might measure them. This is the purview of the social sciences and likely requires some 
+   expertise from within the field of education theory or psychology to really 
+   * A number of non-profits have similar missions: ['Data 4 America'](https://data4america.org/about/) 
+   is one such organization. 
 3. The public are very receptive to scientific content when it is presented in a compelling and interesting way. 
     * Organizations such as the Technology Entertainment Design 
 conference (http://www.ted.com/) are massively popular and provide an excellent template for packaging and 
@@ -182,7 +193,7 @@ presenting complex and compelling scientific ideas.
     * It is important to note that metaphor and analogy are crucial tools that help translate complex 
     scientific ideas into commonsense language. Finding the right framework for this messaging is an 
     important aspect of this communication. 
-4. Finally, we must recognize that this is an *adversarial situation* where our opponents will use literally 
+4. We must recognize that this is an *adversarial situation* where our opponents will use literally 
 every rhetorical trick to counter a scientifically-defined viewpoint. We must counter the trolls directly 
 by understanding, unpacking and attacking their arguments. We should do so explicitly, ruthlessly and with as much 
 transparency and authority as possible. 
@@ -204,16 +215,58 @@ provide insight in the emerging online world of politics.  Colleages such [Emili
  policy through social media, social bots and each other. Understanding the dynamics of these interactions could be crucially valuable in 
  developing effective technological strategies.
 
-### The Role of Scientific Knowledge Engineering
+### What can we do? 
 
+Our goal would be to enable the use of innovative, cutting edge, AI research within the context of 
+policy development. Our strategy for doing this would be by developing methods to leverage 
+and utilize scientific expertise and knowledge in politcally-relevant situations. If we could also
+better understand the rhetorical positions of identifiably-anti-scientific positions within 
+public discourse. If we understand our adversaries, then we can defeat them more easily. 
 
+An initial pilot effort could be to re-examine the scientific literature described in the Cook 
+et al. 2014 consensus study by developing detailed semantic models of the data being cited in those 
+papers. Our job is to explore and explain the science to the public: exploring, explaining and 
+educating through accurate reporting of the abudictive reasoning used to understand what 
+is going on. We may explicitly contrast our approach to that of non-scientific arguments being 
+made but always from the point of view of educating people to think scientifically, and never 
+engaging in a polemic, fruitless discussion. If a climate-skeptic cites counterevidence, we will 
+attempt to understand it rationally and scientifically. After all, as scientists we want people 
+to poke holes in our models and find their flaws. Here, we would welcome such things with 
+politeness and appreciation. 
 
+This is [how Wizards behave when faced with their enemies](https://youtu.be/x1gkzjakHtI?t=2m30s): 
+with grace, intelligence and depth. 
 
-### Conclusion
+Multiple challenges threaten this plan:
+
+1. **Scientific work is complex, difficult to understand and challenging to execute.** In order to
+be able to execute their work well at all, scientists perform technical feats that are 
+difficult to record accurately, let alone reproduce. Work in the field of semantic E-Science (including
+ontological modeling and workflow development) make it possible to reproduce even very 
+complex data analytics, given the additional time and effort required to model them.
+
+2. **There is a lot of knowledge to work through.** curating information from the literature is a 
+slow and laborious process (especially since scientific arguments do not tolerate errors well). 
+Developing methods of automation of the curation task may speed up how representations can be 
+
+3. **Communicating complex scientific ideas is difficult** The popular science media community
+provides a vehicle to do this through magazines, podcasts, books, television and other media. 
+Relying on these traditional methods can only go so far. Modern approaches to data visualization
+provide a far more compelling and exhaustive view of data: such as 
+[this astonishing representation of the casulties of WWII](https://vimeo.com/128373915) or [this 
+excellent TED talk from David McCandless on 'The Beauty of Data Visualization'](https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization#t-55431). 
+
+Clearly, there is a great deal of potential work to do here and this vision document does nothing 
+more than to just paint a picture of how to do this in broad strokes in a single, simple domain: 
+clarifying and solidifying the climate change debate. 
+
+In more general terms though, we would ultimately seek to provide better access to research for 
+policy makers wanting to incorporate the existing scientific research in a given subject into 
+their platform. We imagine this specifically in the context of supporting the mission of 314 Action. 
 
 The great promise of organizations like 314 Action is that the people entering 
-into public life under their guidance will already be trained to think scientifically, 
+into public life under their guidance will already be trained to think scientifically,
 will understand the importance of intellectual integrity and will likely be committed 
 to practical problem-solving approach that will make life better. 
 
-If 314 Action provides the wizards, then we will provide the spells.
+If 314 Action provides wizards, then we can provide spells.
