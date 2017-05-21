@@ -5,8 +5,8 @@ layout: default
 ---
 By *Gully A. Burns*
 
-> *The enemies of reason have a certain blind look, don't you think?*<br>
-> <small> The Duellists, Ridley Scott, 1977</small>
+> <small>*The enemies of reason have a certain blind look, don't you think?*<br>
+> The Duellists, Ridley Scott, 1977</small>
 
 Technologically, we live in interesting times. On the one hand, social 
 media technology tends to drive political discourse to be more polarized and 
@@ -80,7 +80,7 @@ At present, the scientific community does not possess the necessary power to cha
 This is was best said by Ben Goldacre in the last chapter of his book '[Bad Science: Quacks, Hacks, 
 and Big Pharma Flacks](https://books.google.com/books?id=rDT9MO0r0UYC&lpg=PP1&pg=PP1#v=onepage&q&f=false)'. He writes:
 
-> *To anyone who feels their ideas have been challenged by this book or who has been made 
+> <small>*To anyone who feels their ideas have been challenged by this book or who has been made 
 angry by it - to the people who feature in it, I suppose - I would say this: you win. You really 
 do. I would hope that there might be room for you to reconsider, to change your stancein 
 the light of what might be new information (as I will happily do, if there is ever an opportunity 
@@ -88,7 +88,7 @@ to update this book). But you will not need to because, as we both know, you col
 almost full spectrum dominance. Your ideas - bogus though they may be - have immense superficial
 plausibility, they can be expressed rapidly, they are endlessly repeated, and they are believed 
 by enough people for you to make very comfortable livings and to have enormous cultural influence.
-You win.*
+You win.*</small>
 
 Personally, I am not comfortable with this easy capitulation. 
 
@@ -103,7 +103,7 @@ inclusive and more democratic. We may need to transform the way scientists work
 and the way science is taught. This will require impeccability, creativity, 
 honesty, and courage. 
 
-### Science Wizardry 
+### Information Science Wizardry 
 
 So, here are some observations and strategies to consider going forward. 
 
@@ -137,12 +137,14 @@ Unfortunately, even a simple review of this study's own data,
 reveals vulnerabilities in the study that are easily revealed, see this blog post: 
 ['a climate falsehood you can check yourself'](http://daviddfriedman.blogspot.com/2014/02/a-climate-falsehood-you-can-check-for.html). 
 Attempting to use the dark arts of spin when creating a scientifically-driven policy argument is a bad idea. 
-We cannot and should not attempt to play these people at their own game. We will lose. 
+    * We cannot and should not attempt to play these people at their own game. We will lose. 
     * At the 2017 White House Correspondents Dinner, Hasan Minhaj said *"We're living in this 
     strange time, when ***trust is more important than truth***"*. (https://youtu.be/Of6PLJbMnxE?t=12m45s). 
-    Presenting the science vividly and transparently must therefore be a high priority. 
-3. An important thread of work is centered on building systems that provide better access to scientific 
-knowledge generated and reported in the scientific literature. 
+    Presenting the science correctly, vividly and transparently must therefore be a high priority. 
+3. Currently, the most accessible repository of the world's scientific knowledge
+is the scientific literature. This provides a valuable resource for knowledge engineering work 
+and building models of what is reported in the literature can provide insight into the underlying
+subject and influence public opinion.  
     * This was the general idea of the Cook *et al.* 2014 consensus study but they did not dig deeply 
     enough into the science. 
     * What if we could take this further and use machine reading methods to extract and organize the evidence 
@@ -152,7 +154,10 @@ knowledge generated and reported in the scientific literature.
     * Perhaps we could help tailor our view of the politics to more closely align 
     with the scientific evidence, rather than only using the scientific evidence to bolster 
     a preconceived underlying political position. 
-4. ['Solutions Journalism'](http://solutionsjournalism.org/) provides a powerful appraoch to communicating 
+4. There are other related efforts attempting to render aspects of public life more fact-based and 
+    data-driven, politics, journalism, etc. Working to provide these projects with effective 
+
+['Solutions Journalism'](http://solutionsjournalism.org/) provides a powerful appraoch to communicating 
 uncomfortable issues to the public. By surveying how problems are being solved and then framing discussions 
 of difficult subjects, propopents of this approach have shown that members of the public are more engaged 
 and receptive to reporting when framed in this way. Such an approach could work well for how we communicate 
@@ -199,15 +204,16 @@ provide insight in the emerging online world of politics.  Colleages such [Emili
  policy through social media, social bots and each other. Understanding the dynamics of these interactions could be crucially valuable in 
  developing effective technological strategies.
 
-<!--I have the immense privilege of working at the Information Sciences Institute. In its early days, 
-our scientific forefathers helped conceive, design and implement the Internet. 
-My colleagues build data pipelines that detecte gravity waves from colliding black holes.
-They develop machines that translate language, crack mysterious cyphers, guide gene therapy 
-for cancer, combat human trafficking, identify twitter social bots, and read bad handwriting. 
-To name a few. -->
+### The Role of Scientific Knowledge Engineering
+
+
+
+
+### Conclusion
 
 The great promise of organizations like 314 Action is that the people entering 
 into public life under their guidance will already be trained to think scientifically, 
 will understand the importance of intellectual integrity and will likely be committed 
-to practical problem-solving approach that will make life better. If 314 action 
-provides the Wizards, then we will provide the spells.
+to practical problem-solving approach that will make life better. 
+
+If 314 Action provides the wizards, then we will provide the spells.
