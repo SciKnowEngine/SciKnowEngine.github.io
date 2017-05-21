@@ -1,5 +1,5 @@
 ---
-title: Don't Be a Troll, Be a Wizard!
+title: Don't Be a Troll, Be a Wizard! (draft)
 description: A vision for how well-defined access to scientific knowledge could transform the pursuit of policy.
 layout: default
 ---
@@ -94,7 +94,7 @@ Personally, I am not comfortable with this easy capitulation.
 
 Let's start acting a little more like this guy:
 
-![Gandalf vs. the Balrog](Lord-of-the-Rings-Gandalf-and-the-Baalrog.jpg)
+![Gandalf vs. the Balrog](/img/ske/Lord-of-the-Rings-Gandalf-and-the-Baalrog.jpg)
 
 Countering the troll 'full spectrum dominance' will require the development of 
 transformative approaches to remove barriers that laypeople experience in 
