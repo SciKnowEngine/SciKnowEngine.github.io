@@ -80,7 +80,7 @@ At present, the scientific community does not possess the necessary power to cha
 This is was best said by Ben Goldacre in the last chapter of his book '[Bad Science: Quacks, Hacks, 
 and Big Pharma Flacks](https://books.google.com/books?id=rDT9MO0r0UYC&lpg=PP1&pg=PP1#v=onepage&q&f=false)'. He writes:
 
-> <small>*To anyone who feels their ideas have been challenged by this book or who has been made 
+> <small>*"To anyone who feels their ideas have been challenged by this book or who has been made 
 angry by it - to the people who feature in it, I suppose - I would say this: you win. You really 
 do. I would hope that there might be room for you to reconsider, to change your stancein 
 the light of what might be new information (as I will happily do, if there is ever an opportunity 
@@ -88,11 +88,10 @@ to update this book). But you will not need to because, as we both know, you col
 almost full spectrum dominance. Your ideas - bogus though they may be - have immense superficial
 plausibility, they can be expressed rapidly, they are endlessly repeated, and they are believed 
 by enough people for you to make very comfortable livings and to have enormous cultural influence.
-You win.*</small>
+You win."*</small>
 
-Personally, I am not comfortable with this easy capitulation. 
-
-Let's start acting a little more like this guy:
+Personally, I am not comfortable with this easy capitulation. I prefer to take a leaf out of
+ Gandalf's playbook even when faced with a daunting powerful foe. 
 
 ![Gandalf vs. the Balrog](/img/ske/Lord-of-the-Rings-Gandalf-and-the-Baalrog.jpg)
 
@@ -235,7 +234,8 @@ to poke holes in our models and find their flaws. Here, we would welcome such th
 politeness and appreciation. 
 
 This is [how Wizards behave when faced with their enemies](https://youtu.be/x1gkzjakHtI?t=2m30s): 
-with grace, intelligence and depth. 
+with grace, intelligence and depth (and secret plans that ensure a positive outcome even though 
+they might die in the process). 
 
 Multiple challenges threaten this plan:
 
