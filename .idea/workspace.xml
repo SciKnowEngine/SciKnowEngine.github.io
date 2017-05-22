@@ -69,8 +69,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-05-19-DontBeATroll.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="587">
-                <caret line="93" column="66" lean-forward="false" selection-start-line="93" selection-start-column="66" selection-end-line="93" selection-end-column="66" />
+              <first_editor relative-caret-position="28">
+                <caret line="2" column="246" lean-forward="false" selection-start-line="2" selection-start-column="246" selection-end-line="2" selection-end-column="246" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -466,7 +466,7 @@
       <workItem from="1494953445412" duration="8839000" />
       <workItem from="1494971039562" duration="556000" />
       <workItem from="1495133483969" duration="30743000" />
-      <workItem from="1495395031349" duration="6824000" />
+      <workItem from="1495395031349" duration="7035000" />
     </task>
     <task id="LOCAL-00001" summary="Added basic SciKnowEngine site">
       <created>1492802873547</created>
@@ -500,7 +500,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86926000" />
+    <option name="totallyTimeSpent" value="87137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="28" y="23" width="1412" height="877" extended-state="0" />
@@ -837,8 +837,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-05-19-DontBeATroll.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="587">
-            <caret line="93" column="66" lean-forward="false" selection-start-line="93" selection-start-column="66" selection-end-line="93" selection-end-column="66" />
+          <first_editor relative-caret-position="28">
+            <caret line="2" column="246" lean-forward="false" selection-start-line="2" selection-start-column="246" selection-end-line="2" selection-end-column="246" />
             <folding />
           </first_editor>
           <second_editor />
