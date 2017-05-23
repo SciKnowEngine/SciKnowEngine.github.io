@@ -152,9 +152,10 @@ reveals vulnerabilities in the study that are easily revealed, see this blog pos
 ['a climate falsehood you can check yourself'](http://daviddfriedman.blogspot.com/2014/02/a-climate-falsehood-you-can-check-for.html). 
 Attempting to use the dark arts of spin when creating a scientifically-driven policy argument is a bad idea. 
     * We cannot and should not attempt to play these people at their own game. We will lose. 
-    * At the 2017 White House Correspondents Dinner, Hasan Minhaj said *"We're living in this 
-    strange time, when ***trust is more important than truth***"*. (https://youtu.be/Of6PLJbMnxE?t=12m45s). 
-    Presenting the science correctly, vividly and transparently must therefore be a high priority. 
+    * At the 2017 White House Correspondents Dinner, Hasan Minhaj said "We're living in this 
+    strange time, when ***trust is more important than truth***". ([video](https://youtu.be/Of6PLJbMnxE?t=12m45s)). 
+    We have to find ways to establish trustworthiness with people who currently don't believe the 
+    research and choose instead to grasp, easy-to-understand, wrong answers.  
 3. Currently, the most accessible repository of the world's scientific knowledge
 is the scientific literature. This provides a valuable resource for knowledge engineering work 
 and building models of what is reported in the literature can provide insight into the underlying
