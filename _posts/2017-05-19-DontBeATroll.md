@@ -6,7 +6,7 @@ layout: default
 By *Gully A. Burns*
 
 > <small>"Trolls were large monsters of limited intellect. They were strong and vicious, but they could not endure sunlight"<br>
-> \- *tolkiengateway.net/wiki/Trolls*</small>
+> \- *[]tolkiengateway.net/wiki/Trolls](http://tolkiengateway.net/wiki/Trolls)*</small>
 
 Technologically, we live in interesting times. On the one hand, social 
 media technology tends to drive political discourse to be more polarized and 
