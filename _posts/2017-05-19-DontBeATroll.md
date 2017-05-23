@@ -50,7 +50,7 @@ Once of the key issues raging in public policy discourse discussions in
 the United States is *climate change*. Debate in this area largely centeres around the following question:
 
 ><small>*Is the planet warming up because of increased 
-CO<sub>2</sub> in the atmosphere from human activity and energy use? *</small>
+CO<sub>2</sub> in the atmosphere from human activity and energy use?*</small>
 
 This is a contentious question despite a groundswell of public support amongst 
 progressives, combined with a broad consensus over the majority of scientists working in 

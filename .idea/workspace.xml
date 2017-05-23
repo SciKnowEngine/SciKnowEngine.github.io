@@ -70,7 +70,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="590">
-                <caret line="52" column="78" lean-forward="false" selection-start-line="52" selection-start-column="78" selection-end-line="52" selection-end-column="78" />
+                <caret line="52" column="68" lean-forward="true" selection-start-line="52" selection-start-column="68" selection-end-line="52" selection-end-column="68" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -467,7 +467,7 @@
       <workItem from="1494971039562" duration="556000" />
       <workItem from="1495133483969" duration="30743000" />
       <workItem from="1495395031349" duration="7724000" />
-      <workItem from="1495496069552" duration="6125000" />
+      <workItem from="1495496069552" duration="6172000" />
     </task>
     <task id="LOCAL-00001" summary="Added basic SciKnowEngine site">
       <created>1492802873547</created>
@@ -501,7 +501,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93951000" />
+    <option name="totallyTimeSpent" value="93998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="69" y="203" width="1665" height="877" extended-state="0" />
@@ -839,7 +839,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="590">
-            <caret line="52" column="78" lean-forward="false" selection-start-line="52" selection-start-column="78" selection-end-line="52" selection-end-column="78" />
+            <caret line="52" column="68" lean-forward="true" selection-start-line="52" selection-start-column="68" selection-end-line="52" selection-end-column="68" />
             <folding />
           </first_editor>
           <second_editor />
