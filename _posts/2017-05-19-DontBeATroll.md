@@ -5,8 +5,8 @@ layout: default
 ---
 By *Gully A. Burns*
 
-> <small>*The enemies of reason have a certain blind look, don't you think?*<br>
-> The Duellists, Ridley Scott, 1977</small>
+> <small>"Trolls were large monsters of limited intellect. They were strong and vicious, but they could not endure sunlight"<br>
+> \- *tolkiengateway.net/wiki/Trolls*</small>
 
 Technologically, we live in interesting times. On the one hand, social 
 media technology tends to drive political discourse to be more polarized and 
