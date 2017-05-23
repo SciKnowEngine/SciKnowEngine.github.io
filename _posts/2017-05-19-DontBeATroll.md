@@ -32,7 +32,7 @@ pure geekiness, we frame the argument as a perrenial war of political storytelli
 wizards and trolls. 
 
 Now, the [mission statement of the 314 Action nonprofit group](http://www.314action.org/mission-1/), 
-reveals them to be clearly on the Wizard's team. Their primary goal to empower scientific information 
+reveals them to be clearly on the Wizards' team. Their primary goal to empower scientific information 
 to carry further within the process of setting policy, either by electing scientifically-trained 
 politicians or by empowering data-driven policy and scientific research within society. 
 
