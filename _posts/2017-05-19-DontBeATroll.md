@@ -6,35 +6,50 @@ layout: default
 By *Gully A. Burns*
 
 > <small>"Trolls were large monsters of limited intellect. They were strong and vicious, but they could not endure sunlight"<br>
-> \- *[]tolkiengateway.net/wiki/Trolls](http://tolkiengateway.net/wiki/Trolls)*</small>
+> \- *[tolkiengateway.net/wiki/Trolls](http://tolkiengateway.net/wiki/Trolls)*</small>
 
 Technologically, we live in interesting times. On the one hand, social 
-media technology tends to drive political discourse to be more polarized and 
-insular; 'astroturfing' bots manipulate popular opinion on Twitter with incendiary, 
-ill-informed talking points; the ease of web-publishing makes it relatively easy to 
+media technology drives political discourse into polarized shouting matches.  
+'Astroturfing' bots contort the political landscape by pushing false narratives on Twitter with incendiary, 
+ill-informed talking points. The ease of web-publishing makes it relatively easy to 
 drown out informative scientific by spreading misinformation in coordinated online media campaigns. 
 
-On the other hand, underlying advances in information science can drive public engagement in many 
-positive ways. Citizen scientist projects permit laypeople to contribute directly to research; 
-training materials for technically demanding subjects are more 
-easily available than ever before and the information infrastructure of science itself is evolving 
-to change and accelerate the way researchers work towards discovery. 
+But on the other hand, advances in information science  drive public engagement in science.
+Citizen scientist projects permit laypeople to contribute directly to research.
+Massive Open Online Courses (MOOCs) provide pedagogical support for technically demanding subjects to 
+more communitites than ever before. The information infrastructure of science itself is evolving 
+to change and accelerate the path towards discovery. 
 
-How can we build systems and tools that educate and inform people to better understand and use science 
-to develop pragmatic, solution-based policy, rather than rely on the same old, same old polemic 
-ideological discussions that go nowhere, offer no solutions and divide the country?
+These two aspects are sharply opposed, especially when it comes to online discussions of policy. \
+The first approach is based on misinformation, manipulation, provocation, and storytelling. These 
+approaches are generally developed by unscrupulous operators attempting to control a particular public 
+narrative through any means necessary. Let's call the instigators of such methods '[Trolls](http://www.urbandictionary.com/define.php?term=troll)'.
+The second approach is based on hard work, research, a nuanced view of reality in the service of 
+the pursuit of scientific truth. This less-popular, more long-term (and therefore more powerful) 
+approach diligence, honesty, intelligence, and patience. To emphasize the contrast with the formerly-mentioned misbeggoten misinformationists, 
+I here propose that we call people pursuing this endeavor 'Wizards'. Thus, somewhat, in the spirit of 
+pure geekiness, we frame the argument as a perrenial war of political storytelling between two factions:
+wizards and trolls. 
 
-Following [the mission of the 314 Action nonprofit group](http://www.314action.org/mission-1/), 
-we feel that *information technology* could be used effectively in the service of 
-(A) improving the effectiveness of scientific research, 
-(B) improving communication of that research to the public, 
-(C) crafting public policy that can solve real problems of great impact to society and 
-(D) altering the political landscape to advocate for scientific, data-driven, fact-based policy development. 
+Now, the [mission statement of the 314 Action nonprofit group](http://www.314action.org/mission-1/), 
+reveals them to be clearly on the Wizard's team. Their primary goal to empower scientific information 
+to carry further within the process of setting policy, either by electing scientifically-trained 
+politicians or by empowering data-driven policy and scientific research within society. 
+
+Our work in scientific knowledge engineering (and, more broadly, in artificial 
+intelligence) directly supports 314 Action's vision by developing technology to be used to 
+improve access to complex scientific knowledge. Moreover, the people 314 Action are seeking to introduce 
+into public life would be trained to think scientifically and to adopt pragmatic, data-driven methodologies. 
+Put simply, if 314 Action provides the wizards, then we can provide the spells.
+
+I elaborate further below. 
 
 ### A Challenge Problem: the Argument over Climate Change  
 
 Once of the key issues raging in public policy discourse discussions in 
-the United States is *climate change*. Is the planet warming up because of increased 
+the United States is *climate change*. Debate in this area largely centeres around the following question:
+
+>Is the planet warming up because of increased 
 CO<sub>2</sub> in the atmosphere from human activity and energy use? 
 
 This is a contentious question despite a groundswell of public support amongst 
@@ -233,10 +248,6 @@ attempt to understand it rationally and scientifically. After all, as scientists
 to poke holes in our models and find their flaws. Here, we would welcome such things with 
 politeness and appreciation. 
 
-This is [how Wizards behave when faced with their enemies](https://youtu.be/x1gkzjakHtI?t=2m30s): 
-with grace, intelligence and depth (and secret plans that ensure a positive outcome even though 
-they might die in the process). 
-
 Multiple challenges threaten this plan:
 
 1. **Scientific work is complex, difficult to understand and challenging to execute.** In order to
@@ -249,24 +260,24 @@ complex data analytics, given the additional time and effort required to model t
 slow and laborious process (especially since scientific arguments do not tolerate errors well). 
 Developing methods of automation of the curation task may speed up how representations can be 
 
-3. **Communicating complex scientific ideas is difficult** The popular science media community
+3. **Communicating complex scientific ideas is difficult.** The popular science media community
 provides a vehicle to do this through magazines, podcasts, books, television and other media. 
-Relying on these traditional methods can only go so far. Modern approaches to data visualization
-provide a far more compelling and exhaustive view of data: such as 
-[this astonishing representation of the casulties of WWII](https://vimeo.com/128373915) or [this 
-excellent TED talk from David McCandless on 'The Beauty of Data Visualization'](https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization#t-55431). 
+Relying on these traditional methods can only go so far. Data visualization methods can 
+provide a far more compelling and exhaustive view of a complex subject. [This astonishing representation of the casulties of WWII](https://vimeo.com/128373915) 
+is an example of a series of data visualizations that tell a compelling story in a linear fashion. 
+We may need to examine new, non-linear methods to explain and explore the complexities of the subject of
+climate change.
 
-Clearly, there is a great deal of potential work to do here and this vision document does nothing 
-more than to just paint a picture of how to do this in broad strokes in a single, simple domain: 
-clarifying and solidifying the climate change debate. 
+4. **Engaging people in this endeavor requires us to go beyond simple research.** For this work to have 
+an impact, we will require outreach and involvement far beyond the simple development of novel technology.
+With this in mind (and at this early stage), we've bought the domain name `www.beawizard.org` as a possible 
+marketing element going forward. 
 
-In more general terms though, we would ultimately seek to provide better access to research for 
-policy makers wanting to incorporate the existing scientific research in a given subject into 
-their platform. We imagine this specifically in the context of supporting the mission of 314 Action. 
-
-The great promise of organizations like 314 Action is that the people entering 
-into public life under their guidance will already be trained to think scientifically,
-will understand the importance of intellectual integrity and will likely be committed 
-to practical problem-solving approach that will make life better. 
-
-If 314 Action provides wizards, then we can provide spells.
+This post really has three purposes. Firstly, to frame the challenge as a conflict against 
+a well-funded and powerful adversary. Secondly, to pitch the idea of developing scientific 
+knowledge technology to 'wizardly' advocacy groups. Finally, to propose an initial pilot study. 
+This vision document seeks only to present a picture of how to do this in broad strokes in a 
+single, simple domain: clarifying and solidifying the climate change debate. From these humble 
+beginnings, we we would ultimately seek to provide better access to research for 
+policy makers wanting to incorporate existing research from any given field into 
+their platform.
