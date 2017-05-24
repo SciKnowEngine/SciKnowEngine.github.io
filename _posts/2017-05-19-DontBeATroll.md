@@ -9,8 +9,8 @@ By *Gully A. Burns*
 > \- *[tolkiengateway.net/wiki/Trolls](http://tolkiengateway.net/wiki/Trolls)*</small>
 
 Technologically, we live in interesting times. On the one hand, social 
-media technology drives political discourse into polarized shouting matches. 'Astroturfing' 
-bots contort the political landscape by pushing false narratives on Twitter with incendiary, 
+media technology drives political discourse into polarized shouting matches. Astroturfing bots 
+contort the political landscape by pushing false narratives on Twitter with incendiary, 
 ill-informed talking points. The ease of web-publishing makes it relatively easy to 
 drown out informative scientific by spreading misinformation in coordinated online media campaigns. 
 
