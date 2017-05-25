@@ -1,6 +1,6 @@
 ---
-title: Don't Be a Troll, Be a Wizard! (draft)
-description: A vision for how scientific knowledge engineering could support data-driven policy development. This is a preliminary high-level strategic document to develop such tools to support efforts such as 314 Action. This document is a draft. 
+title: Don't Be a Troll, Be a Wizard! 
+description: A vision for how scientific knowledge engineering could support data-driven policy development. This is a preliminary high-level strategic document to develop such tools to support efforts such as 314 Action. 
 layout: default
 ---
 By *Gully A. Burns*
