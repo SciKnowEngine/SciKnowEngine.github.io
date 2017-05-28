@@ -260,6 +260,8 @@ complex data analytics, given the additional time and effort required to model t
 2. **There is a lot of knowledge to work through.** curating information from the literature is a 
 slow and laborious process (especially since scientific arguments do not tolerate errors well). 
 Developing methods of automation of the curation task may speed up how representations can be 
+ populated. Needless to say, this is an area of active research and might form the basis of 
+ a focused study on the climate change literature. 
 
 3. **Communicating complex scientific ideas is difficult.** The popular science media community
 provides a vehicle to do this through magazines, podcasts, books, television and other media. 
