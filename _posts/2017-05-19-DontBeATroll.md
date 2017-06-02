@@ -225,7 +225,7 @@ transparency and authority as possible.
     This is an approach widely used in developing AI-support tools for legal argumentation, but could well be applied 
     here. 
 7. Finally, Computational Social Network Sciences is a powerful emerging field of AI research, that can 
-provide insight in the emerging online world of politics.  Colleages such [Emilio Ferrera](http://www.emilio.ferrara.name/press-coverage/)
+provide insight in the emerging online world of politics.  Colleages such [Emilio Ferrara](http://www.emilio.ferrara.name/press-coverage/)
  and [Kristina Lerman](http://www.isi.edu/integration/people/lerman/index.html) study how people interact with
  policy through social media, social bots and each other. Understanding the dynamics of these interactions could be crucially valuable in 
  developing effective technological strategies.
