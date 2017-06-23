@@ -20,7 +20,7 @@ Massive Open Online Courses (MOOCs) provide pedagogical support for technically 
 more communitites than ever before. The information infrastructure of science itself is evolving 
 to change and accelerate the path towards discovery. 
 
-These two aspects are sharply opposed, especially when it comes to online discussions of policy. \
+These two aspects are sharply opposed, especially when it comes to online discussions of policy.
 The first approach is based on misinformation, manipulation, provocation, and storytelling. These 
 approaches are generally developed by unscrupulous operators attempting to control a particular public 
 narrative through any means necessary. Let's call the instigators of such methods '[Trolls](http://www.urbandictionary.com/define.php?term=troll)'.
