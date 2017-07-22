@@ -85,6 +85,27 @@
     <owl:ObjectProperty rdf:about="http://purl.org/bioc/documents">
         <rdfs:domain rdf:resource="http://purl.org/bioc/Collection"/>
         <rdfs:range rdf:resource="http://purl.org/bioc/Document"/>
+        <rdfs:label xml:lang="en">documents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/bioc/infons -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/bioc/infons">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/bioc/Annotation"/>
+                    <rdf:Description rdf:about="http://purl.org/bioc/Document"/>
+                    <rdf:Description rdf:about="http://purl.org/bioc/Passage"/>
+                    <rdf:Description rdf:about="http://purl.org/bioc/Relation"/>
+                    <rdf:Description rdf:about="http://purl.org/bioc/Sentence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.org/bioc/Infon"/>
         <rdfs:label xml:lang="en">infons</rdfs:label>
     </owl:ObjectProperty>
     

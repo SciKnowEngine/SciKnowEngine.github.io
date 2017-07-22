@@ -50,7 +50,21 @@ rdfs:label rdf:type owl:AnnotationProperty .
 :documents rdf:type owl:ObjectProperty ;
            rdfs:domain :Collection ;
            rdfs:range :Document ;
-           rdfs:label "infons"@en .
+           rdfs:label "documents"@en .
+
+
+###  http://purl.org/bioc/infons
+:infons rdf:type owl:ObjectProperty ;
+        rdfs:domain [ rdf:type owl:Class ;
+                      owl:unionOf ( :Annotation
+                                    :Document
+                                    :Passage
+                                    :Relation
+                                    :Sentence
+                                  )
+                    ] ;
+        rdfs:range :Infon ;
+        rdfs:label "infons"@en .
 
 
 ###  http://purl.org/bioc/locations
