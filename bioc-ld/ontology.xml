@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/bioc/"
+     xml:base="http://purl.org/bioc/"
+     xmlns:schema="http://schema.org/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:prov="http://www.w3.org/ns/prov#">
+    <owl:Ontology rdf:about="http://purl.org/bioc/">
+        <terms:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The BioC format provides a lightweight offline annotation framework (for JSON or XML-formatted data) with very lightweight semantics but has not, to date, been developed as linked data. In this ontology, we provide a simple serialization of BioC classes and attributes for easy publishing to a semantic-web-compatible framework. This is preliminary work and will require additional mapping to existing Web Annotation standards.</terms:abstract>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bridging ontology for easy publishing of annotations developed under the National Library of Medicine&apos;s BioC format as linked data.</terms:description>
+        <terms:license rdf:resource="https://opensource.org/licenses/MIT"/>
+        <terms:references rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comeau DC, Islamaj Doğan R, Ciccarese P, Cohen KB, Krallinger M, Leitner F, Lu Z, Peng Y, Rinaldi F, Torii M, Valencia A, Verspoor K, Wiegers TC, Wu CH, Wilbur WJ. &apos;BioC: a minimalist approach to interoperability for biomedical text processing.&apos; Database (Oxford). 2013 Sep 18;2013:bat064. doi:10.1093/database/bat064. Print 2013. PubMed PMID: 24048470; PubMed Central PMCID:PMC3889917.&apos;</terms:references>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BioC Linked Data</terms:title>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bioc</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/bioc/</vann:preferredNamespaceUri>
+        <schema:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(This does not imply any endorsement from any members of this group and are listed here for the purpose of attribution)</schema:contributor>
+        <schema:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The BioC group: P. Ciccarese, K. Cohen, M. Krallinger, F. Leitner, L. Hirschman, Z. Lu, Y. Peng, F. Rinaldi, M. Torii, A. Valencia, K. Verspoor, T. Wiegers, C. Wu</schema:contributor>
+        <schema:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G. Burns</schema:creator>
+        <schema:dateCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#string">07/22/2017</schema:dateCreated>
+        <schema:logo rdf:resource="http://bioc.sourceforge.net/BioClogo.jpg"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1</owl:versionInfo>
+        <prov:hadPrimarySource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://bioc.sourceforge.org/</prov:hadPrimarySource>
+        <prov:wasAttributedTo rdf:resource="http://orcid.org/0000-0003-1493-865X"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/bioc/annotations -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/bioc/annotations">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/bioc/Passage"/>
+                    <rdf:Description rdf:about="http://purl.org/bioc/Sentence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.org/bioc/Annotation"/>
+        <rdfs:label xml:lang="en">annotations</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/bioc/documents -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/bioc/documents">
+        <rdfs:domain rdf:resource="http://purl.org/bioc/Collection"/>
+        <rdfs:range rdf:resource="http://purl.org/bioc/Document"/>
+        <rdfs:label xml:lang="en">infons</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/bioc/locations -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/bioc/locations">
+        <rdfs:domain rdf:resource="http://purl.org/bioc/Annotation"/>
+        <rdfs:range rdf:resource="http://purl.org/bioc/Location"/>
+        <rdfs:label xml:lang="en">locations</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/bioc/nodes -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/bioc/nodes">
+        <rdfs:domain rdf:resource="http://purl.org/bioc/Relation"/>
+        <rdfs:range rdf:resource="http://purl.org/bioc/Node"/>
+        <rdfs:label xml:lang="en">nodes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/bioc/passages -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/bioc/passages">
+        <rdfs:domain rdf:resource="http://purl.org/bioc/Document"/>
+        <rdfs:range rdf:resource="http://purl.org/bioc/Passage"/>
+        <rdfs:label xml:lang="en">passages</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/bioc/relations -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/bioc/relations">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/bioc/Document"/>
+                    <rdf:Description rdf:about="http://purl.org/bioc/Passage"/>
+                    <rdf:Description rdf:about="http://purl.org/bioc/Sentence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.org/bioc/Relation"/>
+        <rdfs:label xml:lang="en">relations</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/bioc/sentences -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/bioc/sentences">
+        <rdfs:domain rdf:resource="http://purl.org/bioc/Passage"/>
+        <rdfs:range rdf:resource="http://purl.org/bioc/Sentence"/>
+        <rdfs:label xml:lang="en">sentences</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/bioc/date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/bioc/date">
+        <rdfs:domain rdf:resource="http://purl.org/bioc/Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/bioc/id -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/bioc/id">
+        <rdfs:domain rdf:resource="http://purl.org/bioc/Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/bioc/key -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/bioc/key">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/bioc/Collection"/>
+                    <rdf:Description rdf:about="http://purl.org/bioc/Infon"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label xml:lang="en">key</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/bioc/length -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/bioc/length">
+        <rdfs:domain rdf:resource="http://purl.org/bioc/Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">length</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/bioc/offset -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/bioc/offset">
+        <rdfs:domain rdf:resource="http://purl.org/bioc/Sentence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">offset</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/bioc/refid -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/bioc/refid">
+        <rdfs:domain rdf:resource="http://purl.org/bioc/Node"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">refid</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/bioc/role -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/bioc/role">
+        <rdfs:domain rdf:resource="http://purl.org/bioc/Node"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label xml:lang="en">role</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/bioc/source -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/bioc/source">
+        <rdfs:domain rdf:resource="http://purl.org/bioc/Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label xml:lang="en">source</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/bioc/text -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/bioc/text">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/bioc/Annotation"/>
+                    <rdf:Description rdf:about="http://purl.org/bioc/Passage"/>
+                    <rdf:Description rdf:about="http://purl.org/bioc/Sentence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/bioc/value -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/bioc/value">
+        <rdfs:domain rdf:resource="http://purl.org/bioc/Infon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label xml:lang="en">value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/bioc/Annotation -->
+
+
+    <owl:Class rdf:about="http://purl.org/bioc/Annotation">
+        <rdfs:label xml:lang="en">BioCAnnotation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bioc/Collection -->
+
+
+    <owl:Class rdf:about="http://purl.org/bioc/Collection">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collection of documents.nnCollection of documents for a project. They may be an entire corpus or some portion of a corpus. Fields are provided to describe the collection.nnDocuments may appear empty if doing document at a time IO.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/bioc/"/>
+        <rdfs:label xml:lang="en">BioCCollection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bioc/Document -->
+
+
+    <owl:Class rdf:about="http://purl.org/bioc/Document">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each bioc:Document in the bioc:Collection.nnAn id, typically from the original corpus, identifies the particular document. It includes bioc:Passages in the document and possibly bioc:Relations over annotations on the document.</rdfs:comment>
+        <rdfs:label xml:lang="en">BioCDocument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bioc/Infon -->
+
+
+    <owl:Class rdf:about="http://purl.org/bioc/Infon">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bioc:Infon elements is a simply a URI-based key/value pair linking the annotation to any semantic web annotation. This is deliberately open-ended URI to provide maximum  expressibilty. This is equivalent to the original use of the &apos;infons&apos; field across multiple classes within the BioC standard.</rdfs:comment>
+        <rdfs:label xml:lang="en">BioCInfon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bioc/Location -->
+
+
+    <owl:Class rdf:about="http://purl.org/bioc/Location">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The connection to the original text can be made through the :offset, :length, and possibly the :text data properties.</rdfs:comment>
+        <rdfs:label xml:lang="en">BioCLocation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bioc/Node -->
+
+
+    <owl:Class rdf:about="http://purl.org/bioc/Node">
+        <rdfs:label xml:lang="en">BioCNode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bioc/Passage -->
+
+
+    <owl:Class rdf:about="http://purl.org/bioc/Passage">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One passage in a bioc:Document.nn This might be the bioc:text in the passage and possibly bioc:Annotations over that text. It could be the bioc:Sentences in the passage. In either case it might include bioc:Relations over annotations on the passage.</rdfs:comment>
+        <rdfs:label xml:lang="en">BioCPassage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bioc/Relation -->
+
+
+    <owl:Class rdf:about="http://purl.org/bioc/Relation">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relationship between multiple bioc:Annotations and possibly other bioc:Relations.</rdfs:comment>
+        <rdfs:label xml:lang="en">BioCRelation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/bioc/Sentence -->
+
+
+    <owl:Class rdf:about="http://purl.org/bioc/Sentence">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bioc:Document offset to where the sentence begins in the bioc:Passage. This value is the sum of the passage offset and the local offset within the passage.</rdfs:comment>
+        <rdfs:label xml:lang="en">BioCSentence</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

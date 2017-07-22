@@ -1,0 +1,619 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.0), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://purl.org/bioc" ],
+    "title" : {
+      "undefined" : "BioC Linked Data"
+    },
+    "iri" : "http://purl.org/bioc/",
+    "version" : "0.1",
+    "author" : [ "G. Burns" ],
+    "description" : {
+      "undefined" : "A bridging ontology for easy publishing of annotations developed under the National Library of Medicine's BioC format as linked data."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "G. Burns",
+        "type" : "label"
+      } ],
+      "references" : [ {
+        "identifier" : "references",
+        "language" : "undefined",
+        "value" : "Comeau DC, Islamaj Do?an R, Ciccarese P, Cohen KB, Krallinger M, Leitner F, Lu Z, Peng Y, Rinaldi F, Torii M, Valencia A, Verspoor K, Wiegers TC, Wu CH, Wilbur WJ. 'BioC: a minimalist approach to interoperability for biomedical text processing.' Database (Oxford). 2013 Sep 18;2013:bat064. doi:10.1093/database/bat064. Print 2013. PubMed PMID: 24048470; PubMed Central PMCID:PMC3889917.'",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "undefined",
+        "value" : "The BioC format provides a lightweight offline annotation framework (for JSON or XML-formatted data) with very lightweight semantics but has not, to date, been developed as linked data. In this ontology, we provide a simple serialization of BioC classes and attributes for easy publishing to a semantic-web-compatible framework. This is preliminary work and will require additional mapping to existing Web Annotation standards.",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "BioC Linked Data",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://opensource.org/licenses/MIT",
+        "type" : "iri"
+      } ],
+      "hadPrimarySource" : [ {
+        "identifier" : "hadPrimarySource",
+        "language" : "undefined",
+        "value" : "http://bioc.sourceforge.org/",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "(This does not imply any endorsement from any members of this group and are listed here for the purpose of attribution)",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "The BioC group: P. Ciccarese, K. Cohen, M. Krallinger, F. Leitner, L. Hirschman, Z. Lu, Y. Peng, F. Rinaldi, M. Torii, A. Valencia, K. Verspoor, T. Wiegers, C. Wu",
+        "type" : "label"
+      } ],
+      "dateCreated" : [ {
+        "identifier" : "dateCreated",
+        "language" : "undefined",
+        "value" : "07/22/2017",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "bioc",
+        "type" : "label"
+      } ],
+      "logo" : [ {
+        "identifier" : "logo",
+        "language" : "undefined",
+        "value" : "http://bioc.sourceforge.net/BioClogo.jpg",
+        "type" : "iri"
+      } ],
+      "wasAttributedTo" : [ {
+        "identifier" : "wasAttributedTo",
+        "language" : "undefined",
+        "value" : "http://orcid.org/0000-0003-1493-865X",
+        "type" : "iri"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://purl.org/bioc/",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 9,
+    "objectPropertyCount" : 7,
+    "datatypePropertyCount" : 10,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "9",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "owl:unionOf"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://purl.org/bioc/Location",
+    "baseIri" : "http://purl.org/bioc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Location",
+      "en" : "BioCLocation"
+    },
+    "comment" : {
+      "undefined" : "The connection to the original text can be made through the :offset, :length, and possibly the :text data properties."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "12", "13" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://purl.org/bioc/Node",
+    "baseIri" : "http://purl.org/bioc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Node",
+      "en" : "BioCNode"
+    },
+    "id" : "18"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.org/bioc/Collection",
+    "baseIri" : "http://purl.org/bioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/bioc/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Collection",
+      "en" : "BioCCollection"
+    },
+    "comment" : {
+      "undefined" : "Collection of documents.nnCollection of documents for a project. They may be an entire corpus or some portion of a corpus. Fields are provided to describe the collection.nnDocuments may appear empty if doing document at a time IO."
+    },
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://purl.org/bioc/Sentence",
+    "baseIri" : "http://purl.org/bioc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sentence",
+      "en" : "BioCSentence"
+    },
+    "comment" : {
+      "undefined" : "A bioc:Document offset to where the sentence begins in the bioc:Passage. This value is the sum of the passage offset and the local offset within the passage."
+    },
+    "id" : "6"
+  }, {
+    "instances" : 0,
+    "union" : [ "6", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "27"
+  }, {
+    "instances" : 0,
+    "union" : [ "16", "6", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://purl.org/bioc/Infon",
+    "baseIri" : "http://purl.org/bioc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Infon",
+      "en" : "BioCInfon"
+    },
+    "comment" : {
+      "undefined" : "A bioc:Infon elements is a simply a URI-based key/value pair linking the annotation to any semantic web annotation. This is deliberately open-ended URI to provide maximum  expressibilty. This is equivalent to the original use of the 'infons' field across multiple classes within the BioC standard."
+    },
+    "id" : "12"
+  }, {
+    "iri" : "http://purl.org/bioc/Relation",
+    "baseIri" : "http://purl.org/bioc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Relation",
+      "en" : "BioCRelation"
+    },
+    "comment" : {
+      "undefined" : "Relationship between multiple bioc:Annotations and possibly other bioc:Relations."
+    },
+    "id" : "10"
+  }, {
+    "iri" : "http://purl.org/bioc/Document",
+    "baseIri" : "http://purl.org/bioc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Document",
+      "en" : "BioCDocument"
+    },
+    "comment" : {
+      "undefined" : "Each bioc:Document in the bioc:Collection.nnAn id, typically from the original corpus, identifies the particular document. It includes bioc:Passages in the document and possibly bioc:Relations over annotations on the document."
+    },
+    "id" : "16"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://purl.org/bioc/Passage",
+    "baseIri" : "http://purl.org/bioc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Passage",
+      "en" : "BioCPassage"
+    },
+    "comment" : {
+      "undefined" : "One passage in a bioc:Document.nn This might be the bioc:text in the passage and possibly bioc:Annotations over that text. It could be the bioc:Sentences in the passage. In either case it might include bioc:Relations over annotations on the passage."
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://purl.org/bioc/Annotation",
+    "baseIri" : "http://purl.org/bioc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Annotation",
+      "en" : "BioCAnnotation"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "6", "1", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "20"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://purl.org/bioc/locations",
+    "baseIri" : "http://purl.org/bioc",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "locations",
+      "en" : "locations"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://purl.org/bioc/sentences",
+    "baseIri" : "http://purl.org/bioc",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "sentences",
+      "en" : "sentences"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://purl.org/bioc/relations",
+    "baseIri" : "http://purl.org/bioc",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "relations",
+      "en" : "relations"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://purl.org/bioc/passages",
+    "baseIri" : "http://purl.org/bioc",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "passages",
+      "en" : "passages"
+    },
+    "domain" : "16",
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://purl.org/bioc/text",
+    "baseIri" : "http://purl.org/bioc",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "text",
+      "en" : "text"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://purl.org/bioc/refid",
+    "baseIri" : "http://purl.org/bioc",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "refid",
+      "en" : "refid"
+    },
+    "domain" : "18",
+    "attributes" : [ "datatype" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://purl.org/bioc/key",
+    "baseIri" : "http://purl.org/bioc",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "key",
+      "en" : "key"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://purl.org/bioc/value",
+    "baseIri" : "http://purl.org/bioc",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "value",
+      "en" : "value"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://purl.org/bioc/date",
+    "baseIri" : "http://purl.org/bioc",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "date",
+      "en" : "date"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://purl.org/bioc/id",
+    "baseIri" : "http://purl.org/bioc",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "id",
+      "en" : "id"
+    },
+    "domain" : "16",
+    "attributes" : [ "datatype" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://purl.org/bioc/annotations",
+    "baseIri" : "http://purl.org/bioc",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "annotations",
+      "en" : "annotations"
+    },
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://purl.org/bioc/source",
+    "baseIri" : "http://purl.org/bioc",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "source",
+      "en" : "source"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://purl.org/bioc/offset",
+    "baseIri" : "http://purl.org/bioc",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "offset",
+      "en" : "offset"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://purl.org/bioc/role",
+    "baseIri" : "http://purl.org/bioc",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "role",
+      "en" : "role"
+    },
+    "domain" : "18",
+    "attributes" : [ "datatype" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://purl.org/bioc/nodes",
+    "baseIri" : "http://purl.org/bioc",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "nodes",
+      "en" : "nodes"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://purl.org/bioc/length",
+    "baseIri" : "http://purl.org/bioc",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "length",
+      "en" : "length"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://purl.org/bioc/documents",
+    "baseIri" : "http://purl.org/bioc",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "documents",
+      "en" : "infons"
+    },
+    "domain" : "13",
+    "attributes" : [ "object" ],
+    "id" : "39"
+  } ]
+}

@@ -1,0 +1,684 @@
+<h2  id="crossreference" class="list">Cross reference for BioC Linked Data classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by BioC Linked Data.
+<div id="classes">
+   <h3 id="classes" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Annotation" title="http://purl.org/bioc/Annotation">BioCAnnotation</a>
+      </li>
+      <li>
+         <a href="#Collection" title="http://purl.org/bioc/Collection">BioCCollection</a>
+      </li>
+      <li>
+         <a href="#Document" title="http://purl.org/bioc/Document">BioCDocument</a>
+      </li>
+      <li>
+         <a href="#Infon" title="http://purl.org/bioc/Infon">BioCInfon</a>
+      </li>
+      <li>
+         <a href="#Location" title="http://purl.org/bioc/Location">BioCLocation</a>
+      </li>
+      <li>
+         <a href="#Node" title="http://purl.org/bioc/Node">BioCNode</a>
+      </li>
+      <li>
+         <a href="#Passage" title="http://purl.org/bioc/Passage">BioCPassage</a>
+      </li>
+      <li>
+         <a href="#Relation" title="http://purl.org/bioc/Relation">BioCRelation</a>
+      </li>
+      <li>
+         <a href="#Sentence" title="http://purl.org/bioc/Sentence">BioCSentence</a>
+      </li>
+   </ul>
+   <div class="entity" id="Annotation">
+      <h3>BioCAnnotation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/Annotation</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#locations" title="http://purl.org/bioc/locations">locations</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#annotations" title="http://purl.org/bioc/annotations">annotations</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Collection">
+      <h3>BioCCollection<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/Collection</p>
+      <div class="comment">
+         <span class="markdown">Collection of documents.nnCollection of documents for a project. They may be an entire corpus or some portion of a corpus. Fields are provided to describe the collection.nnDocuments may appear empty if doing document at a time IO.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>is defined by</dt>
+         <dd>
+            <a href="http://purl.org/bioc/">http://purl.org/bioc/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#date" title="http://purl.org/bioc/date">date</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#documents" title="http://purl.org/bioc/documents">infons</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#source" title="http://purl.org/bioc/source">source</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Document">
+      <h3>BioCDocument<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/Document</p>
+      <div class="comment">
+         <span class="markdown">Each bioc:Document in the bioc:Collection.nnAn id, typically from the original corpus, identifies the particular document. It includes bioc:Passages in the document and possibly bioc:Relations over annotations on the document.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#id" title="http://purl.org/bioc/id">id</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#passages" title="http://purl.org/bioc/passages">passages</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#documents" title="http://purl.org/bioc/documents">infons</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Infon">
+      <h3>BioCInfon<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/Infon</p>
+      <div class="comment">
+         <span class="markdown">A bioc:Infon elements is a simply a URI-based key/value pair linking the annotation to any semantic web annotation. This is deliberately open-ended URI to provide maximum  expressibilty. This is equivalent to the original use of the 'infons' field across multiple classes within the BioC standard.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#value" title="http://purl.org/bioc/value">value</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Location">
+      <h3>BioCLocation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/Location</p>
+      <div class="comment">
+         <span class="markdown">The connection to the original text can be made through the :offset, :length, and possibly the :text data properties.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#length" title="http://purl.org/bioc/length">length</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#locations" title="http://purl.org/bioc/locations">locations</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Node">
+      <h3>BioCNode<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/Node</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#refid" title="http://purl.org/bioc/refid">refid</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#role" title="http://purl.org/bioc/role">role</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#nodes" title="http://purl.org/bioc/nodes">nodes</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Passage">
+      <h3>BioCPassage<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/Passage</p>
+      <div class="comment">
+         <span class="markdown">One passage in a bioc:Document.nn This might be the bioc:text in the passage and possibly bioc:Annotations over that text. It could be the bioc:Sentences in the passage. In either case it might include bioc:Relations over annotations on the passage.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#sentences" title="http://purl.org/bioc/sentences">sentences</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#passages" title="http://purl.org/bioc/passages">passages</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Relation">
+      <h3>BioCRelation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/Relation</p>
+      <div class="comment">
+         <span class="markdown">Relationship between multiple bioc:Annotations and possibly other bioc:Relations.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#nodes" title="http://purl.org/bioc/nodes">nodes</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#relations" title="http://purl.org/bioc/relations">relations</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Sentence">
+      <h3>BioCSentence<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/Sentence</p>
+      <div class="comment">
+         <span class="markdown">A bioc:Document offset to where the sentence begins in the bioc:Passage. This value is the sum of the passage offset and the local offset within the passage.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#offset" title="http://purl.org/bioc/offset">offset</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#sentences" title="http://purl.org/bioc/sentences">sentences</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#annotations" title="http://purl.org/bioc/annotations">annotations</a>
+      </li>
+      <li>
+         <a href="#documents" title="http://purl.org/bioc/documents">infons</a>
+      </li>
+      <li>
+         <a href="#locations" title="http://purl.org/bioc/locations">locations</a>
+      </li>
+      <li>
+         <a href="#nodes" title="http://purl.org/bioc/nodes">nodes</a>
+      </li>
+      <li>
+         <a href="#passages" title="http://purl.org/bioc/passages">passages</a>
+      </li>
+      <li>
+         <a href="#relations" title="http://purl.org/bioc/relations">relations</a>
+      </li>
+      <li>
+         <a href="#sentences" title="http://purl.org/bioc/sentences">sentences</a>
+      </li>
+   </ul>
+   <div class="entity" id="annotations">
+      <h3>annotations<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/annotations</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Passage" title="http://purl.org/bioc/Passage">BioCPassage</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Sentence" title="http://purl.org/bioc/Sentence">BioCSentence</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Annotation" title="http://purl.org/bioc/Annotation">BioCAnnotation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="documents">
+      <h3>infons<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/documents</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Collection" title="http://purl.org/bioc/Collection">BioCCollection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Document" title="http://purl.org/bioc/Document">BioCDocument</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="locations">
+      <h3>locations<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/locations</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Annotation" title="http://purl.org/bioc/Annotation">BioCAnnotation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Location" title="http://purl.org/bioc/Location">BioCLocation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="nodes">
+      <h3>nodes<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/nodes</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Relation" title="http://purl.org/bioc/Relation">BioCRelation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Node" title="http://purl.org/bioc/Node">BioCNode</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="passages">
+      <h3>passages<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/passages</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Document" title="http://purl.org/bioc/Document">BioCDocument</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Passage" title="http://purl.org/bioc/Passage">BioCPassage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="relations">
+      <h3>relations<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/relations</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Document" title="http://purl.org/bioc/Document">BioCDocument</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Passage" title="http://purl.org/bioc/Passage">BioCPassage</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Sentence" title="http://purl.org/bioc/Sentence">BioCSentence</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Relation" title="http://purl.org/bioc/Relation">BioCRelation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="sentences">
+      <h3>sentences<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/sentences</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Passage" title="http://purl.org/bioc/Passage">BioCPassage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Sentence" title="http://purl.org/bioc/Sentence">BioCSentence</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#date" title="http://purl.org/bioc/date">date</a>
+      </li>
+      <li>
+         <a href="#id" title="http://purl.org/bioc/id">id</a>
+      </li>
+      <li>
+         <a href="#key" title="http://purl.org/bioc/key">key</a>
+      </li>
+      <li>
+         <a href="#length" title="http://purl.org/bioc/length">length</a>
+      </li>
+      <li>
+         <a href="#offset" title="http://purl.org/bioc/offset">offset</a>
+      </li>
+      <li>
+         <a href="#refid" title="http://purl.org/bioc/refid">refid</a>
+      </li>
+      <li>
+         <a href="#role" title="http://purl.org/bioc/role">role</a>
+      </li>
+      <li>
+         <a href="#source" title="http://purl.org/bioc/source">source</a>
+      </li>
+      <li>
+         <a href="#text" title="http://purl.org/bioc/text">text</a>
+      </li>
+      <li>
+         <a href="#value" title="http://purl.org/bioc/value">value</a>
+      </li>
+   </ul>
+   <div class="entity" id="date">
+      <h3>date<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/date</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Collection" title="http://purl.org/bioc/Collection">BioCCollection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="id">
+      <h3>id<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/id</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Document" title="http://purl.org/bioc/Document">BioCDocument</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="key">
+      <h3>key<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/key</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Collection" title="http://purl.org/bioc/Collection">BioCCollection</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Infon" title="http://purl.org/bioc/Infon">BioCInfon</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="length">
+      <h3>length<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/length</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Location" title="http://purl.org/bioc/Location">BioCLocation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="offset">
+      <h3>offset<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/offset</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Sentence" title="http://purl.org/bioc/Sentence">BioCSentence</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="refid">
+      <h3>refid<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/refid</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Node" title="http://purl.org/bioc/Node">BioCNode</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="role">
+      <h3>role<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/role</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Node" title="http://purl.org/bioc/Node">BioCNode</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="source">
+      <h3>source<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/source</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Collection" title="http://purl.org/bioc/Collection">BioCCollection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="text">
+      <h3>text<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/text</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Annotation" title="http://purl.org/bioc/Annotation">BioCAnnotation</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Passage" title="http://purl.org/bioc/Passage">BioCPassage</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Sentence" title="http://purl.org/bioc/Sentence">BioCSentence</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="value">
+      <h3>value<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/bioc/value</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Infon" title="http://purl.org/bioc/Infon">BioCInfon</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

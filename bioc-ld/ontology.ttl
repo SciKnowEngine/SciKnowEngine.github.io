@@ -1,0 +1,236 @@
+@prefix : <http://purl.org/bioc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.org/bioc/> .
+
+<http://purl.org/bioc/> rdf:type owl:Ontology ;
+                         <http://purl.org/dc/terms/abstract> "The BioC format provides a lightweight offline annotation framework (for JSON or XML-formatted data) with very lightweight semantics but has not, to date, been developed as linked data. In this ontology, we provide a simple serialization of BioC classes and attributes for easy publishing to a semantic-web-compatible framework. This is preliminary work and will require additional mapping to existing Web Annotation standards."^^xsd:string ;
+                         <http://purl.org/dc/terms/description> "A bridging ontology for easy publishing of annotations developed under the National Library of Medicine's BioC format as linked data."^^xsd:string ;
+                         <http://purl.org/dc/terms/license> <https://opensource.org/licenses/MIT> ;
+                         <http://purl.org/dc/terms/references> "Comeau DC, Islamaj Doğan R, Ciccarese P, Cohen KB, Krallinger M, Leitner F, Lu Z, Peng Y, Rinaldi F, Torii M, Valencia A, Verspoor K, Wiegers TC, Wu CH, Wilbur WJ. 'BioC: a minimalist approach to interoperability for biomedical text processing.' Database (Oxford). 2013 Sep 18;2013:bat064. doi:10.1093/database/bat064. Print 2013. PubMed PMID: 24048470; PubMed Central PMCID:PMC3889917.'"^^xsd:string ;
+                         <http://purl.org/dc/terms/title> "BioC Linked Data"^^xsd:string ;
+                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "bioc"^^xsd:string ;
+                         <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/bioc/"^^xsd:string ;
+                         <http://schema.org/contributor> "(This does not imply any endorsement from any members of this group and are listed here for the purpose of attribution)"^^xsd:string ,
+                                                         "The BioC group: P. Ciccarese, K. Cohen, M. Krallinger, F. Leitner, L. Hirschman, Z. Lu, Y. Peng, F. Rinaldi, M. Torii, A. Valencia, K. Verspoor, T. Wiegers, C. Wu"^^xsd:string ;
+                         <http://schema.org/creator> "G. Burns"^^xsd:string ;
+                         <http://schema.org/dateCreated> "07/22/2017"^^xsd:string ;
+                         <http://schema.org/logo> <http://bioc.sourceforge.net/BioClogo.jpg> ;
+                         owl:versionInfo "0.1"^^xsd:string ;
+                         <http://www.w3.org/ns/prov#hadPrimarySource> "http://bioc.sourceforge.org/"^^xsd:string ;
+                         <http://www.w3.org/ns/prov#wasAttributedTo> <http://orcid.org/0000-0003-1493-865X> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/bioc/annotations
+:annotations rdf:type owl:ObjectProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :Passage
+                                         :Sentence
+                                       )
+                         ] ;
+             rdfs:range :Annotation ;
+             rdfs:label "annotations"@en .
+
+
+###  http://purl.org/bioc/documents
+:documents rdf:type owl:ObjectProperty ;
+           rdfs:domain :Collection ;
+           rdfs:range :Document ;
+           rdfs:label "infons"@en .
+
+
+###  http://purl.org/bioc/locations
+:locations rdf:type owl:ObjectProperty ;
+           rdfs:domain :Annotation ;
+           rdfs:range :Location ;
+           rdfs:label "locations"@en .
+
+
+###  http://purl.org/bioc/nodes
+:nodes rdf:type owl:ObjectProperty ;
+       rdfs:domain :Relation ;
+       rdfs:range :Node ;
+       rdfs:label "nodes"@en .
+
+
+###  http://purl.org/bioc/passages
+:passages rdf:type owl:ObjectProperty ;
+          rdfs:domain :Document ;
+          rdfs:range :Passage ;
+          rdfs:label "passages"@en .
+
+
+###  http://purl.org/bioc/relations
+:relations rdf:type owl:ObjectProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :Document
+                                       :Passage
+                                       :Sentence
+                                     )
+                       ] ;
+           rdfs:range :Relation ;
+           rdfs:label "relations"@en .
+
+
+###  http://purl.org/bioc/sentences
+:sentences rdf:type owl:ObjectProperty ;
+           rdfs:domain :Passage ;
+           rdfs:range :Sentence ;
+           rdfs:label "sentences"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/bioc/date
+:date rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Collection ;
+      rdfs:range xsd:dateTime ;
+      rdfs:label "date"@en .
+
+
+###  http://purl.org/bioc/id
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Document ;
+    rdfs:range xsd:string ;
+    rdfs:label "id"@en .
+
+
+###  http://purl.org/bioc/key
+:key rdf:type owl:DatatypeProperty ;
+     rdfs:domain [ rdf:type owl:Class ;
+                   owl:unionOf ( :Collection
+                                 :Infon
+                               )
+                 ] ;
+     rdfs:range xsd:anyURI ;
+     rdfs:label "key"@en .
+
+
+###  http://purl.org/bioc/length
+:length rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Location ;
+        rdfs:range xsd:integer ;
+        rdfs:label "length"@en .
+
+
+###  http://purl.org/bioc/offset
+:offset rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Sentence ;
+        rdfs:range xsd:integer ;
+        rdfs:label "offset"@en .
+
+
+###  http://purl.org/bioc/refid
+:refid rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Node ;
+       rdfs:range xsd:string ;
+       rdfs:label "refid"@en .
+
+
+###  http://purl.org/bioc/role
+:role rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Node ;
+      rdfs:range xsd:anyURI ;
+      rdfs:label "role"@en .
+
+
+###  http://purl.org/bioc/source
+:source rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Collection ;
+        rdfs:range xsd:anyURI ;
+        rdfs:label "source"@en .
+
+
+###  http://purl.org/bioc/text
+:text rdf:type owl:DatatypeProperty ;
+      rdfs:domain [ rdf:type owl:Class ;
+                    owl:unionOf ( :Annotation
+                                  :Passage
+                                  :Sentence
+                                )
+                  ] ;
+      rdfs:range xsd:string ;
+      rdfs:label "text"@en .
+
+
+###  http://purl.org/bioc/value
+:value rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Infon ;
+       rdfs:range xsd:anyURI ;
+       rdfs:label "value"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/bioc/Annotation
+:Annotation rdf:type owl:Class ;
+            rdfs:label "BioCAnnotation"@en .
+
+
+###  http://purl.org/bioc/Collection
+:Collection rdf:type owl:Class ;
+            rdfs:comment "Collection of documents.nnCollection of documents for a project. They may be an entire corpus or some portion of a corpus. Fields are provided to describe the collection.nnDocuments may appear empty if doing document at a time IO."^^xsd:string ;
+            rdfs:isDefinedBy <http://purl.org/bioc/> ;
+            rdfs:label "BioCCollection"@en .
+
+
+###  http://purl.org/bioc/Document
+:Document rdf:type owl:Class ;
+          rdfs:comment "Each bioc:Document in the bioc:Collection.nnAn id, typically from the original corpus, identifies the particular document. It includes bioc:Passages in the document and possibly bioc:Relations over annotations on the document."^^xsd:string ;
+          rdfs:label "BioCDocument"@en .
+
+
+###  http://purl.org/bioc/Infon
+:Infon rdf:type owl:Class ;
+       rdfs:comment "A bioc:Infon elements is a simply a URI-based key/value pair linking the annotation to any semantic web annotation. This is deliberately open-ended URI to provide maximum  expressibilty. This is equivalent to the original use of the 'infons' field across multiple classes within the BioC standard."^^xsd:string ;
+       rdfs:label "BioCInfon"@en .
+
+
+###  http://purl.org/bioc/Location
+:Location rdf:type owl:Class ;
+          rdfs:comment "The connection to the original text can be made through the :offset, :length, and possibly the :text data properties."^^xsd:string ;
+          rdfs:label "BioCLocation"@en .
+
+
+###  http://purl.org/bioc/Node
+:Node rdf:type owl:Class ;
+      rdfs:label "BioCNode"@en .
+
+
+###  http://purl.org/bioc/Passage
+:Passage rdf:type owl:Class ;
+         rdfs:comment "One passage in a bioc:Document.nn This might be the bioc:text in the passage and possibly bioc:Annotations over that text. It could be the bioc:Sentences in the passage. In either case it might include bioc:Relations over annotations on the passage."^^xsd:string ;
+         rdfs:label "BioCPassage"@en .
+
+
+###  http://purl.org/bioc/Relation
+:Relation rdf:type owl:Class ;
+          rdfs:comment "Relationship between multiple bioc:Annotations and possibly other bioc:Relations."^^xsd:string ;
+          rdfs:label "BioCRelation"@en .
+
+
+###  http://purl.org/bioc/Sentence
+:Sentence rdf:type owl:Class ;
+          rdfs:comment "A bioc:Document offset to where the sentence begins in the bioc:Passage. This value is the sum of the passage offset and the local offset within the passage."^^xsd:string ;
+          rdfs:label "BioCSentence"@en .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
