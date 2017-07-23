@@ -13,9 +13,6 @@ This section provides details for each class and property defined by BioC Linked
          <a href="#Document" title="http://purl.org/bioc/Document">BioCDocument</a>
       </li>
       <li>
-         <a href="#Infon" title="http://purl.org/bioc/Infon">BioCInfon</a>
-      </li>
-      <li>
          <a href="#Location" title="http://purl.org/bioc/Location">BioCLocation</a>
       </li>
       <li>
@@ -38,6 +35,9 @@ This section provides details for each class and property defined by BioC Linked
       </h3>
       <p>
          <strong>IRI:</strong> http://purl.org/bioc/Annotation</p>
+      <div class="comment">
+         <span class="markdown">Annotations associated with a specific Passage. A note about 'infons': we translate the infons construct to &lt;emph&gt;any object relation that is not contained within the BioC namespace&lt;/emph&gt;. The BioC format uses general associative arrays to describe these additional metadata, but linked data naturally provides this structure natively</span>
+      </div>
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
@@ -59,7 +59,7 @@ This section provides details for each class and property defined by BioC Linked
       <p>
          <strong>IRI:</strong> http://purl.org/bioc/Collection</p>
       <div class="comment">
-         <span class="markdown">Collection of documents.nnCollection of documents for a project. They may be an entire corpus or some portion of a corpus. Fields are provided to describe the collection.nnDocuments may appear empty if doing document at a time IO.</span>
+         <span class="markdown">Collection of documents nnCollection of documents for a project. They may be an entire corpus or some portion of a corpus. Fields are provided to describe the collection. Documents may appear empty if doing document at a time IO.  A note about 'infons': we translate the infons construct to &lt;emph&gt;any object relation that is not contained within the BioC namespace&lt;/emph&gt;. The BioC format uses general associative arrays to describe these additional metadata, but linked data naturally provides this structure natively</span>
       </div>
       <dl class="definedBy">
          <dt>is defined by</dt>
@@ -72,7 +72,8 @@ This section provides details for each class and property defined by BioC Linked
          <dd>
             <a href="#date" title="http://purl.org/bioc/date">date</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#documents" title="http://purl.org/bioc/documents">documents</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#source" title="http://purl.org/bioc/source">source</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#key" title="http://purl.org/bioc/key">key</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#source" title="http://purl.org/bioc/source">source</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
@@ -85,7 +86,7 @@ This section provides details for each class and property defined by BioC Linked
       <p>
          <strong>IRI:</strong> http://purl.org/bioc/Document</p>
       <div class="comment">
-         <span class="markdown">Each bioc:Document in the bioc:Collection.nnAn id, typically from the original corpus, identifies the particular document. It includes bioc:Passages in the document and possibly bioc:Relations over annotations on the document.</span>
+         <span class="markdown">Each bioc:Document in the bioc:Collection. An id, typically from the original corpus, identifies the particular document. It includes bioc:Passages in the document and possibly bioc:Relations over annotations on the document. A note about 'infons': we translate the infons construct to &lt;emph&gt;any object relation that is not contained within the BioC namespace&lt;/emph&gt;. The BioC format uses general associative arrays to describe these additional metadata, but linked data naturally provides this structure natively</span>
       </div>
       <dl class="description">
          <dt>is in domain of</dt>
@@ -97,29 +98,6 @@ This section provides details for each class and property defined by BioC Linked
          <dt>is in range of</dt>
          <dd>
             <a href="#documents" title="http://purl.org/bioc/documents">documents</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Infon">
-      <h3>BioCInfon<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/bioc/Infon</p>
-      <div class="comment">
-         <span class="markdown">A bioc:Infon elements is a simply a URI-based key/value pair linking the annotation to any semantic web annotation. This is deliberately open-ended URI to provide maximum  expressibilty. This is equivalent to the original use of the 'infons' field across multiple classes within the BioC standard.</span>
-      </div>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#value" title="http://purl.org/bioc/value">value</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#infons" title="http://purl.org/bioc/infons">infons</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -176,7 +154,7 @@ This section provides details for each class and property defined by BioC Linked
       <p>
          <strong>IRI:</strong> http://purl.org/bioc/Passage</p>
       <div class="comment">
-         <span class="markdown">One passage in a bioc:Document.nn This might be the bioc:text in the passage and possibly bioc:Annotations over that text. It could be the bioc:Sentences in the passage. In either case it might include bioc:Relations over annotations on the passage.</span>
+         <span class="markdown">One passage in a bioc:Document.  This might be the bioc:text in the passage and possibly bioc:Annotations over that text. It could be the bioc:Sentences in the passage. In either case it might include bioc:Relations over annotations on the passage. A note about 'infons': we translate the infons construct to &lt;emph&gt;any object relation that is not contained within the BioC namespace&lt;/emph&gt;. The BioC format uses general associative arrays to describe these additional metadata, but linked data naturally provides this structure natively.</span>
       </div>
       <dl class="description">
          <dt>is in domain of</dt>
@@ -247,9 +225,6 @@ This section provides details for each class and property defined by BioC Linked
          <a href="#documents" title="http://purl.org/bioc/documents">documents</a>
       </li>
       <li>
-         <a href="#infons" title="http://purl.org/bioc/infons">infons</a>
-      </li>
-      <li>
          <a href="#locations" title="http://purl.org/bioc/locations">locations</a>
       </li>
       <li>
@@ -307,40 +282,6 @@ This section provides details for each class and property defined by BioC Linked
             <dt>has range</dt>
             <dd>
                <a href="#Document" title="http://purl.org/bioc/Document">BioCDocument</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="infons">
-      <h3>infons<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/bioc/infons</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Annotation" title="http://purl.org/bioc/Annotation">BioCAnnotation</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#Document" title="http://purl.org/bioc/Document">BioCDocument</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#Passage" title="http://purl.org/bioc/Passage">BioCPassage</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#Relation" title="http://purl.org/bioc/Relation">BioCRelation</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#Sentence" title="http://purl.org/bioc/Sentence">BioCSentence</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Infon" title="http://purl.org/bioc/Infon">BioCInfon</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -492,9 +433,6 @@ This section provides details for each class and property defined by BioC Linked
       <li>
          <a href="#text" title="http://purl.org/bioc/text">text</a>
       </li>
-      <li>
-         <a href="#value" title="http://purl.org/bioc/value">value</a>
-      </li>
    </ul>
    <div class="entity" id="date">
       <h3>date<sup class="type-dp" title="data property">dp</sup>
@@ -550,14 +488,11 @@ This section provides details for each class and property defined by BioC Linked
             <dt>has domain</dt>
             <dd>
                <a href="#Collection" title="http://purl.org/bioc/Collection">BioCCollection</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#Infon" title="http://purl.org/bioc/Infon">BioCInfon</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
             </dd>
          </dl>
       </div>
@@ -690,27 +625,6 @@ This section provides details for each class and property defined by BioC Linked
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="value">
-      <h3>value<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/bioc/value</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Infon" title="http://purl.org/bioc/Infon">BioCInfon</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
             </dd>
          </dl>
       </div>

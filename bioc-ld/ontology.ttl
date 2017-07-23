@@ -53,20 +53,6 @@ rdfs:label rdf:type owl:AnnotationProperty .
            rdfs:label "documents"@en .
 
 
-###  http://purl.org/bioc/infons
-:infons rdf:type owl:ObjectProperty ;
-        rdfs:domain [ rdf:type owl:Class ;
-                      owl:unionOf ( :Annotation
-                                    :Document
-                                    :Passage
-                                    :Relation
-                                    :Sentence
-                                  )
-                    ] ;
-        rdfs:range :Infon ;
-        rdfs:label "infons"@en .
-
-
 ###  http://purl.org/bioc/locations
 :locations rdf:type owl:ObjectProperty ;
            rdfs:domain :Annotation ;
@@ -127,12 +113,8 @@ rdfs:label rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/bioc/key
 :key rdf:type owl:DatatypeProperty ;
-     rdfs:domain [ rdf:type owl:Class ;
-                   owl:unionOf ( :Collection
-                                 :Infon
-                               )
-                 ] ;
-     rdfs:range xsd:anyURI ;
+     rdfs:domain :Collection ;
+     rdfs:range xsd:string ;
      rdfs:label "key"@en .
 
 
@@ -183,39 +165,27 @@ rdfs:label rdf:type owl:AnnotationProperty .
       rdfs:label "text"@en .
 
 
-###  http://purl.org/bioc/value
-:value rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Infon ;
-       rdfs:range xsd:anyURI ;
-       rdfs:label "value"@en .
-
-
 #################################################################
 #    Classes
 #################################################################
 
 ###  http://purl.org/bioc/Annotation
 :Annotation rdf:type owl:Class ;
+            rdfs:comment "Annotations associated with a specific Passage. A note about 'infons': we translate the infons construct to <emph>any object relation that is not contained within the BioC namespace</emph>. The BioC format uses general associative arrays to describe these additional metadata, but linked data naturally provides this structure natively"^^xsd:string ;
             rdfs:label "BioCAnnotation"@en .
 
 
 ###  http://purl.org/bioc/Collection
 :Collection rdf:type owl:Class ;
-            rdfs:comment "Collection of documents.nnCollection of documents for a project. They may be an entire corpus or some portion of a corpus. Fields are provided to describe the collection.nnDocuments may appear empty if doing document at a time IO."^^xsd:string ;
+            rdfs:comment "Collection of documents nnCollection of documents for a project. They may be an entire corpus or some portion of a corpus. Fields are provided to describe the collection. Documents may appear empty if doing document at a time IO.  A note about 'infons': we translate the infons construct to <emph>any object relation that is not contained within the BioC namespace</emph>. The BioC format uses general associative arrays to describe these additional metadata, but linked data naturally provides this structure natively"^^xsd:string ;
             rdfs:isDefinedBy <http://purl.org/bioc/> ;
             rdfs:label "BioCCollection"@en .
 
 
 ###  http://purl.org/bioc/Document
 :Document rdf:type owl:Class ;
-          rdfs:comment "Each bioc:Document in the bioc:Collection.nnAn id, typically from the original corpus, identifies the particular document. It includes bioc:Passages in the document and possibly bioc:Relations over annotations on the document."^^xsd:string ;
+          rdfs:comment "Each bioc:Document in the bioc:Collection. An id, typically from the original corpus, identifies the particular document. It includes bioc:Passages in the document and possibly bioc:Relations over annotations on the document. A note about 'infons': we translate the infons construct to <emph>any object relation that is not contained within the BioC namespace</emph>. The BioC format uses general associative arrays to describe these additional metadata, but linked data naturally provides this structure natively"^^xsd:string ;
           rdfs:label "BioCDocument"@en .
-
-
-###  http://purl.org/bioc/Infon
-:Infon rdf:type owl:Class ;
-       rdfs:comment "A bioc:Infon elements is a simply a URI-based key/value pair linking the annotation to any semantic web annotation. This is deliberately open-ended URI to provide maximum  expressibilty. This is equivalent to the original use of the 'infons' field across multiple classes within the BioC standard."^^xsd:string ;
-       rdfs:label "BioCInfon"@en .
 
 
 ###  http://purl.org/bioc/Location
@@ -231,7 +201,7 @@ rdfs:label rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/bioc/Passage
 :Passage rdf:type owl:Class ;
-         rdfs:comment "One passage in a bioc:Document.nn This might be the bioc:text in the passage and possibly bioc:Annotations over that text. It could be the bioc:Sentences in the passage. In either case it might include bioc:Relations over annotations on the passage."^^xsd:string ;
+         rdfs:comment "One passage in a bioc:Document.  This might be the bioc:text in the passage and possibly bioc:Annotations over that text. It could be the bioc:Sentences in the passage. In either case it might include bioc:Relations over annotations on the passage. A note about 'infons': we translate the infons construct to <emph>any object relation that is not contained within the BioC namespace</emph>. The BioC format uses general associative arrays to describe these additional metadata, but linked data naturally provides this structure natively."^^xsd:string ;
          rdfs:label "BioCPassage"@en .
 
 
