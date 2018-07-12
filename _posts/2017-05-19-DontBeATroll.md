@@ -12,7 +12,7 @@ Technologically, we live in interesting times. On the one hand, social
 media technology drives political discourse into polarized shouting matches. Astroturfing bots 
 contort the political landscape by pushing false narratives on Twitter with incendiary, 
 ill-informed talking points. The ease of web-publishing makes it relatively easy to 
-drown out informative scientific by spreading misinformation in coordinated online media campaigns. 
+drown out informative scientific work by spreading misinformation in coordinated online media campaigns. 
 
 But on the other hand, advances in information science  drive public engagement in science.
 Citizen scientist projects permit laypeople to contribute directly to research.
