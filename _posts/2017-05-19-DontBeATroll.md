@@ -26,7 +26,7 @@ approaches are generally developed by unscrupulous operators attempting to contr
 narrative through any means necessary. Let's call the instigators of such methods '[Trolls](http://www.urbandictionary.com/define.php?term=troll)'.
 The second approach is based on hard work, research, a nuanced view of reality in the service of 
 the pursuit of scientific truth. This less-popular, more long-term (and therefore more powerful) 
-approach diligence, honesty, intelligence, and patience. To emphasize the contrast with the formerly-mentioned misbeggoten misinformationists, 
+approach requires diligence, honesty, intelligence, and patience. To emphasize the contrast with the formerly-mentioned misbeggoten misinformationists, 
 I here propose that we call people pursuing this endeavor 'Wizards'. Thus, somewhat, in the spirit of 
 pure geekiness, we frame the argument as a perrenial war of political storytelling between two factions:
 wizards and trolls. 
