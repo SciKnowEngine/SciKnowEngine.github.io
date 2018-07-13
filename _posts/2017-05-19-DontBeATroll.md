@@ -272,9 +272,7 @@ We may need to examine new, non-linear methods to explain and explore the comple
 climate change.
 
 4. **Engaging people in this endeavor requires us to go beyond simple research.** For this work to have 
-an impact, we will require outreach and involvement far beyond the simple development of novel technology.
-With this in mind (and at this early stage), we've bought the domain name `www.beawizard.org` as a possible 
-marketing element going forward. 
+an impact, we will require outreach and involvement far beyond the simple development of novel technology. 
 
 This post really has three purposes. Firstly, to frame the challenge as a conflict against 
 a well-funded and powerful adversary. Secondly, to pitch the idea of developing scientific 
